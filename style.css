@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.navbar {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.logo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navigation links (desktop) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 0.18s, transform 0.18s;
+}
+
+/* hover and active states */
+.nav-links a:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-1px);
+}
+
+.nav-links a.active {
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* small-screen adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    width: 95%;
+    padding: 12px 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    background: transparent;
+    margin-top: 10px;
+  }
+
+  /* make links larger on mobile for easy tapping */
+  .nav-links a {
+    padding: 10px 14px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+    .main-hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #0d6efd, #5596ff);
+      color: #fff;
+    }
+
+    .main-hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .main-hero p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      line-height: 1.6;
+    }
+
+    .lab-directory {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 50px 20px;
+    }
+
+    .lab-box {
+      background: #fff;
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 25px;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .lab-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .lab-box h3 {
+      color: #0d6efd;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d6efd;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .main-hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .lab-box {
+        width: 90%;
+      }
+    }
