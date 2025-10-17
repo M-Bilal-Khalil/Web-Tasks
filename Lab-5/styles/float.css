@@ -1,0 +1,9 @@
+/* float.css - float and clearing examples */
+@import url("base.css");
+@import url("utilities.css");
+
+.float-left { float:left; width:40%; margin-right:12px; background:#fff; padding:12px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.04); }
+.float-right { float:right; width:30%; margin-left:12px; background:#fff; padding:12px; border-radius:8px; }
+.clearfix::after { content:""; display:block; clear:both; }
+
+.float-box { background:#f8fafc; padding:10px; border-radius:6px; border:1px solid #eef2ff; }

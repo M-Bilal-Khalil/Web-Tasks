@@ -1,0 +1,10 @@
+/* position.css - static, relative, absolute, fixed, sticky */
+@import url("base.css");
+@import url("utilities.css");
+
+.pos-frame { height:220px; background:#fff; border-radius:8px; padding:12px; position:relative; box-shadow:0 6px 18px rgba(0,0,0,0.04); }
+.pos-absolute { position:absolute; top:12px; right:12px; background:var(--accent); color:#fff; padding:6px 8px; border-radius:6px; }
+.pos-relative { position:relative; top:0; left:0; }
+.pos-fixed { position:fixed; bottom:20px; left:20px; background:#0b3a66; color:#fff; padding:8px 10px; border-radius:8px; }
+.pos-sticky-wrapper { height:220px; overflow:auto; border-radius:8px; background:#fff; }
+.pos-sticky { position:sticky; top:0; background:#fff; padding:8px; border-bottom:1px solid rgba(0,0,0,0.04); }

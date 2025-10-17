@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Magazine Layout</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/advanced.css" />
+    <style>
+      .mag {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr;
+      }
+      .header-hero {
+        background: #fff;
+        padding: 18px;
+        border-radius: 10px;
+      }
+      @media (min-width: 992px) {
+        /* asymmetric desktop: big left column + two small right columns */
+        .mag {
+          grid-template-columns: 2fr 1fr;
+          grid-auto-rows: auto;
+        }
+        .mag .story-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+          grid-column: 1 / span 1;
+        }
+        .mag .side-col {
+          grid-column: 2 / span 1;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+      }
+      @media (min-width: 720px) and (max-width: 991px) {
+        .mag {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Magazine Layout</h1>
+      <a href="../index.html" class="back-btn">← Back</a>
+    </header>
+
+    <main class="mag">
+      <div class="header-hero">
+        <h2>Magazine Title</h2>
+        <p>Lead story and intro text with responsive typography.</p>
+      </div>
+
+      <div class="story-grid">
+        <div class="box">Feature Story (large)</div>
+        <div class="box">Feature Story (secondary)</div>
+      </div>
+
+      <aside class="side-col">
+        <div class="box">Editor's Note</div>
+        <div class="box">Popular</div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Magazine layout — asymmetric on desktop, symmetric on tablet,
+        single-column mobile.
+      </p>
+    </footer>
+  </body>
+</html>

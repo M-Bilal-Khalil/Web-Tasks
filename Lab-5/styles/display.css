@@ -1,0 +1,19 @@
+/* display.css - demonstration of display property values */
+@import url("base.css");
+@import url("utilities.css");
+
+.display-demo { display:block; }
+.inline-demo { display:inline; }
+.inline-block-demo { display:inline-block; width:180px; padding:8px; background:#e9f2ff; border-radius:6px; }
+.flex-demo { display:flex; gap:12px; align-items:center; }
+.grid-demo { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.hidden-demo { display:none; }
+.visibility-hidden { visibility:hidden; }
+
+.example-box {
+  background:#fff;
+  border:1px dashed rgba(11,58,102,0.12);
+  padding:12px;
+  border-radius:8px;
+  text-align:center;
+}

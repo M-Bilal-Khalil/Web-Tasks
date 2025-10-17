@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine Float Layout</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/utilities.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/advanced.css">
+  </head>
+  <body>
+    <div class="container clearfix">
+      <header>
+        <h1>Magazine Float Layout</h1>
+        <a href="../index.html" class="back-btn">← Back</a>
+      </header>
+
+      <div class="main-article">
+        <h2>Main Article</h2>
+        <p>
+          This layout demonstrates how floats were traditionally used to
+          structure web pages before Flexbox and Grid. The main article sits on
+          the left while the sidebar floats to the right.
+        </p>
+        <p>
+          Although floats are now less common for layout, understanding them
+          helps maintain legacy projects.
+        </p>
+      </div>
+
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>
+          This is a sidebar containing related links or advertisements. It stays
+          beside the main content using float.
+        </p>
+      </aside>
+
+      <footer>
+        <p>Classic Float-Based Layout Example</p>
+      </footer>
+    </div>
+  </body>
+</html>

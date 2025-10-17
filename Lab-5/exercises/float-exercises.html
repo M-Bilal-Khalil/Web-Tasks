@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Float Exercises</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/float.css" />
+  <link rel="stylesheet" href="../styles/utilities.css" />
+  <link rel="stylesheet" href="../styles/media-queries.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+
+</head>
+<body>
+  <div class="container">
+     <div class="page-header">
+  <h1>Flexbox Exercises</h1>
+  <a href="../index.html" class="back-btn">← Back</a>
+</div>
+    <section class="section clearfix">
+      <div class="float-left">
+        <p class="kv">Floating left</p>
+        <p class="small">This box floats left and text wraps around it in the parent container.</p>
+      </div>
+      <div class="col">
+        <p>Body text in the parent that wraps around the floated element. The clearfix on the parent guarantees the container clears floats.</p>
+        <p class="small">Use <span class="code">clear:both</span> or clearfix pseudo-element to contain floats.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="float-right float-box">
+        <p class="kv">Float Right</p>
+        <p class="small">Right-floated element example.</p>
+      </div>
+      <div class="col">
+        <p>More content demonstrating wrapping behavior with another float.</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

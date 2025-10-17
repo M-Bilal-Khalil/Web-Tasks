@@ -1,0 +1,6 @@
+/* responsive.css - additional small tweaks for responsive demos */
+@media (max-width:480px) {
+  .hero h1 { font-size:1.4rem; }
+  .lab-card, .lab-box { width:100%; }
+  .container{ padding:12px; }
+}

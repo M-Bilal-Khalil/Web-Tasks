@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/advanced.css" />
+    <style>
+      .form-wrap {
+        width: 90%;
+        max-width: 900px;
+        margin: 20px auto;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .form-row {
+        display: flex;
+        gap: 12px;
+      }
+      .input {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #e6eefc;
+        background: #fff;
+        width: 100%;
+      }
+      .control-bottom {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      @media (min-width: 768px) {
+        .form-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .control-bottom {
+          grid-column: 1/-1;
+          justify-content: flex-end;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Flexbox Form Builder</h1>
+      <a href="../index.html" class="back-btn">← Back</a>
+    </header>
+
+    <main class="form-wrap">
+      <form class="form-grid">
+        <div>
+          <label>Name</label>
+          <input class="input" type="text" placeholder="Full Name" />
+        </div>
+        <div>
+          <label>Registration #</label>
+          <input class="input" type="text" placeholder="Reg No" />
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input class="input" type="email" />
+        </div>
+        <div>
+          <label>Password</label>
+          <input class="input" type="password" />
+        </div>
+
+        <div style="grid-column: 1/-1">
+          <label>Address</label>
+          <textarea class="input" rows="3"></textarea>
+        </div>
+
+        <div class="control-bottom">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>Form builder — flexible sections and multi-column on desktop.</p>
+    </footer>
+  </body>
+</html>

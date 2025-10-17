@@ -1,0 +1,10 @@
+/* media-queries.css - helpful responsive breakpoints */
+@media (max-width: 1024px) {
+  .container { width:94%; }
+  .grid-3 { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width: 720px) {
+  .grid-3, .grid-2, .grid-auto { grid-template-columns:1fr; }
+  .row { flex-direction:column; }
+  .float-left, .float-right { float:none; width:100%; margin:0 0 12px 0; }
+}
