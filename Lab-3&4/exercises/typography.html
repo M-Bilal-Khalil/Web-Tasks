@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Typography Showcase</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/typography.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <style>
+      .sample {
+        padding: 12px;
+        border-radius: 10px;
+        display: block;
+        margin-bottom: 12px;
+        background: #fff;
+        box-shadow: var(--shadow);
+      }
+      .muted {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Typography Showcase</h1>
+        <nav class="main-nav">
+          <a href="../index.html">Home</a>
+          <a href="typography.html" class="active">Typography</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Three Google Fonts</h2>
+        <div class="sample font-inter">
+          <h3>Inter — Sans (Web safe)</h3>
+          <p class="lead">
+            Inter is used for UI text: readable at small sizes and good for UI.
+          </p>
+        </div>
+
+        <div class="sample font-merri">
+          <h3>Merriweather — Serif</h3>
+          <p class="lead">
+            Merriweather gives a classic serif feel — great for headings and
+            long reading.
+          </p>
+        </div>
+
+        <div class="sample font-roboslab">
+          <h3>Roboto Slab — Slab-Serif</h3>
+          <p class="lead">
+            Roboto Slab works well for prominent headings and display text.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Font sizes (px, em, rem, %)</h2>
+        <p class="size-px sample">20px size — fixed with px.</p>
+        <p class="size-em sample">1.25em — relative to parent (em).</p>
+        <p class="size-rem sample">1.1rem — relative to root (rem).</p>
+        <p class="size-percent sample">110% — percent-based sizing.</p>
+      </section>
+
+      <section class="card">
+        <h2>Text effects</h2>
+        <p class="underline">Underlined and decorated text example</p>
+        <p class="upper text-shadow">Uppercase with shadow</p>
+        <p class="gradient-text gradient-clipped">
+          Gradient text / clipping demo
+        </p>
+        <p class="block-with-caps">
+          Block with pseudo-element 'TIP' shown via ::before
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        Back to labs — <a href="../index.html">Home</a>
+      </div>
+    </footer>
+  </body>
+</html>

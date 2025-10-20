@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Transform Gallery</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <style>
+      .demo-box {
+        width: 120px;
+        height: 120px;
+        background: var(--accent);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      .box-row {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 12px;
+      }
+      .rotate:hover {
+        transform: rotate(20deg);
+      }
+      .scale:hover {
+        transform: scale(1.2);
+      }
+      .translate:hover {
+        transform: translateY(-15px);
+      }
+      .skew:hover {
+        transform: skew(10deg, 5deg);
+      }
+      .origin:hover {
+        transform-origin: top left;
+        transform: rotate(25deg);
+      }
+      .threed:hover {
+        transform: rotateY(25deg) rotateX(15deg);
+        transform-style: preserve-3d;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container"><h1 class="logo">Transform Gallery</h1></div>
+    </header>
+    <main class="container">
+      <section class="card center">
+        <h2>Hover Each Box</h2>
+        <div class="box-row">
+          <div class="demo-box rotate">Rotate</div>
+          <div class="demo-box scale">Scale</div>
+          <div class="demo-box translate">Translate</div>
+          <div class="demo-box skew">Skew</div>
+          <div class="demo-box origin">Origin</div>
+          <div class="demo-box threed">3D</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

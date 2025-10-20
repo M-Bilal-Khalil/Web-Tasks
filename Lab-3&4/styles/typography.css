@@ -1,0 +1,85 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0f172a;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+.font-merri {
+  font-family: "Merriweather", serif;
+}
+.font-roboslab {
+  font-family: "Roboto Slab", serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+.size-px {
+  font-size: 20px;
+}
+.size-em {
+  font-size: 1.25em;
+}
+.size-rem {
+  font-size: 1.1rem;
+}
+.size-percent {
+  font-size: 110%;
+}
+.upper {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.cap {
+  text-transform: capitalize;
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.text-shadow {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.block-with-caps::before {
+  content: "TIP";
+  display: inline-block;
+  background: var(--accent-2);
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+::selection {
+  background: var(--accent);
+  color: white;
+}
+p::first-letter {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+p::first-line {
+  font-weight: 600;
+}

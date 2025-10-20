@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Background Gallery</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/effects.css" />
+    <style>
+      .demo {
+        padding: 18px;
+        border-radius: 12px;
+        color: white;
+        margin-bottom: 12px;
+      }
+      .bg-solid {
+        background: #ef4444;
+      }
+      .bg-image {
+        background-image: url("../images/backgrounds/bg1.jpeg");
+        background-size: cover;
+        background-position: center;
+        min-height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+      }
+      .bg-layered {
+        background: linear-gradient(
+            180deg,
+            rgba(124, 58, 237, 0.28),
+            rgba(37, 99, 235, 0.2)
+          ),
+          url("../images/backgrounds/bg2.jpeg");
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        min-height: 180px;
+        border-radius: 12px;
+        color: white;
+        padding: 12px;
+      }
+      .bg-linear {
+        background: linear-gradient(135deg, #7c3aed, #2563eb);
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bg-radial {
+        background: radial-gradient(
+          circle at 20% 20%,
+          #f59e0b,
+          #ef4444 40%,
+          #7c3aed 80%
+        );
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Background Gallery</h1>
+        <nav class="main-nav">
+          <a href="../index.html">Home</a>
+          <a href="backgrounds.html" class="active">Backgrounds</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Solid color</h2>
+        <div class="demo bg-solid">
+          Solid color background (hex / rgb / hsl are supported)
+        </div>
+
+        <h2>Image background (repeat, position, size)</h2>
+        <div class="bg-image">Image background (cover, center)</div>
+
+        <h2>Multiple backgrounds & blend</h2>
+        <div class="bg-layered">Multiple layers + blend mode</div>
+
+        <h2>Gradients</h2>
+        <div class="bg-linear">Linear gradient</div>
+        <div style="height: 12px"></div>
+        <div class="bg-radial">Radial gradient</div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        Back to labs — <a href="../index.html">Home</a>
+      </div>
+    </footer>
+  </body>
+</html>

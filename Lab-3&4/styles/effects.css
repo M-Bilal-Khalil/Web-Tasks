@@ -1,0 +1,122 @@
+/* ============================
+   Advanced CSS Effects Styles
+   ============================ */
+
+.gradient-text {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+
+/* ✅ Custom Checkbox & Radio */
+.custom-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: flex-start;
+}
+
+.checkbox-container, .radio-container {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  color: var(--accent-2);
+}
+
+.checkbox-container input,
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Checkbox */
+.checkmark {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  height: 18px;
+  width: 18px;
+  border-radius: 4px;
+  background-color: #eee;
+  border: 2px solid var(--accent);
+  transition: 0.3s;
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--accent);
+  box-shadow: 0 0 10px rgba(37,99,235,0.3);
+}
+
+/* Radio */
+.radiomark {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 2px solid var(--accent);
+  transition: 0.3s;
+}
+.radio-container input:checked ~ .radiomark {
+  background-color: var(--accent-2);
+  box-shadow: 0 0 10px rgba(124,58,237,0.3);
+}
+
+/* ✅ Loading Animation */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e7eb;
+  border-top: 5px solid var(--accent);
+  border-radius: 50%;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.text-clip {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  background-image: url('../images/icons/icon.avif');
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.shadow-box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent);
+  box-shadow:
+    3px 3px 8px rgba(0,0,0,0.05),
+    -3px -3px 8px rgba(255,255,255,0.6),
+    inset 2px 2px 6px rgba(0,0,0,0.05),
+    inset -2px -2px 6px rgba(255,255,255,0.8);
+  transition: 0.3s ease;
+}
+.shadow-box:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    6px 6px 12px rgba(0,0,0,0.08),
+    -4px -4px 10px rgba(255,255,255,0.7);
+}

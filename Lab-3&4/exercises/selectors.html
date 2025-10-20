@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Selectors Practice</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <style>
+      p {
+        color: #0f172a;
+      }
+      .highlight {
+        background: rgba(37, 99, 235, 0.06);
+        padding: 6px 8px;
+        border-radius: 6px;
+      }
+      #main-demo {
+        border-left: 4px solid var(--accent);
+        padding-left: 12px;
+      }
+      *[data-demo] {
+        font-weight: 600;
+      }
+      a[target="_blank"] {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+      button[data-state="danger"] {
+        background: #ec4899;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 10px;
+      }
+      input[type^="text"] {
+        border: 2px dashed #e6eefc;
+        padding: 8px;
+        border-radius: 6px;
+      }
+      .group p {
+        margin: 4px 0;
+      }
+      .list > li {
+        color: var(--muted);
+      }
+      h3 + p {
+        color: var(--accent-2);
+        font-weight: 700;
+      }
+      .a ~ .b {
+        color: #7c3aed;
+      }
+      a:link,
+      a:visited {
+        color: white;
+      }
+      a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      button:focus {
+        outline: 3px solid rgba(124, 58, 237, 0.12);
+      }
+      .quote::before {
+        content: "“";
+        font-size: 2rem;
+        color: var(--accent-2);
+        margin-right: 6px;
+      }
+      .quote::after {
+        content: "”";
+        margin-left: 6px;
+        color: var(--accent-2);
+      }
+      .list li:nth-child(odd) {
+        background: rgba(37, 99, 235, 0.03);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Selectors</h1>
+        <nav class="main-nav">
+          <a href="../index.html">Home</a>
+          <a href="selectors.html" class="active">Selectors</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card" id="main-demo">
+        <h2>Basic selectors</h2>
+        <p class="lead">Element selector example</p>
+        <p class="highlight">Class selector</p>
+        <p id="special">ID selector</p>
+      </section>
+
+      <section class="card">
+        <h2>Attribute selectors</h2>
+        <div class="row">
+          <a href="#" target="_blank" data-demo>External link</a>
+          <button data-state="danger">Danger button</button>
+          <input type="text-email" placeholder="begins-with example" />
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Combinators & Pseudo</h2>
+        <div class="group">
+          <h3>Heading</h3>
+          <p>Adjacent sibling demo</p>
+          <ul class="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+          <p class="quote">Pseudo-elements demo</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Interactive</h2>
+        <div class="row">
+          <a href="#">Normal link</a>
+          <a href="#" target="_blank">Blank link</a>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-ghost">Ghost</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><a href="../index.html">Home</a></div>
+    </footer>
+  </body>
+</html>
